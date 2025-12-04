@@ -1,0 +1,560 @@
+/* ===== Global styles ===== */
+ 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #e6f4ff, #f9fcff);
+  color: #222;
+  line-height: 1.7;
+  padding: 20px;
+}
+ 
+/* Centered container card */
+ 
+.container {
+ 
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+}
+ 
+/* Header */
+ 
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e5f2ff;
+  padding-bottom: 18px;
+  margin-top: 20px;
+ 
+}
+ 
+.header h1 {
+  font-size: 2rem;
+  color: #0057c2;
+  letter-spacing: 0.5px;
+}
+ 
+.header p {
+  margin-top: 6px;
+  color: #567;
+  font-size: 0.95rem;
+}
+ 
+/* Section layout */
+ 
+.section {
+  margin-bottom: 24px;
+  padding: 18px 18px 16px;
+  border-radius: 12px;
+  border: 1px solid #e5f2ff;
+  background: #f9fcff;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+ 
+.section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  border-color: #bcdcff;
+}
+ 
+.section h2 {
+  font-size: 1.2rem;
+  color: #004791;
+  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+ 
+/* Small tag style before headings */
+ 
+.section h2::before {
+  content: "";
+  width: 8px;
+  height: 22px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #00bfa6, #007fe6);
+}
+ 
+/* Lists */
+ 
+.section ul {
+  list-style: none;
+  margin-left: 0;
+}
+ 
+.section li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+  font-size: 0.97rem;
+  color: #334;
+}
+ 
+.section li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 2px solid #00a4ff;
+  position: absolute;
+  left: 3px;
+  top: 7px;
+}
+ 
+/* Make key words bold more visible */
+ 
+.section li strong {
+  color: #0057c2;
+}
+ 
+/* Info note / tips box */
+ 
+.note {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-left: 4px solid #00a86b;
+  background: #f2fff8;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #2f5b45;
+}
+ 
+/* Simple two-column layout for stretches */
+ 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 14px;
+}
+ 
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e5f2ff;
+  padding: 14px 12px 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+  color: rgb(51, 92, 255);
+}
+ 
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 16px rgba(0,0,0,0.08);
+}
+ 
+.card-title {
+  font-weight: 600;
+  color: #0063c0;
+  margin-bottom: 6px;
+}
+ 
+/* Footer line */
+ 
+.footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #778;
+}
+ 
+ 
+ .nav {
+   
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            transition: top 0.3s ease;
+        }
+ 
+ 
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-weight: 1000;
+            font-size: 1.8rem;
+            color: #fff;
+        }
+ 
+        .logo .brand-accent {
+            color: #27ae60;
+            font-weight: 1000;
+        }
+ 
+        .nav-links ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .nav-links ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+ 
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.3s ease;
+            font-size: large;
+        }
+ 
+        .nav-links ul li a:hover {
+            color: #27ae60;
+        }
+        .contact-header h1 {
+    margin-top: 100px;
+}
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0;
+}
+ 
+.about h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+ 
+.about p {
+    font: 36px;
+    font-weight: normal;
+}
+.injuries-header {
+    height: 50vh;
+    width: 94%;
+    padding-top: 150px;
+    background-image: linear-gradient(rgba(2, 5, 25, 0.5), rgba(2, 5, 25, 0.5)), url("rabbids_invasion.jpg");
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    margin-left: 40px;
+}
+        .nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 9999;
+ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 80px;
+            transition: top 0.3s ease;
+        }
+ 
+ 
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-weight: 1000;
+            font-size: 1.8rem;
+            color: #fff;
+        }
+ 
+        .logo .brand-accent {
+            color: #f6f8fb;
+            font-weight: 1000;
+        }
+ 
+        .nav-links ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        .nav-links ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+ 
+        .nav-links ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: 0.3s ease;
+        }
+ 
+        .nav-links ul li a:hover {
+            color: #f9df5b;
+        }
+        .logo{
+    width: 50px;
+    height: 50px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.navbar {
+    background: #fff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.nav img {
+    width: 150px;
+}
+ 
+.nav-links {
+    flex: 1;
+    text-align: right;
+    transition: right 0.45s cubic-bezier(.2, .8, .2, 1), opacity 0.3s ease;
+}
+ 
+.nav-links ul {
+    list-style: none;
+}
+ 
+.nav-links ul li {
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+}
+ 
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
+}
+ 
+.nav-links ul li a:hover {
+    color: pink;
+}
+ 
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: all 0.3s ease;
+}
+ 
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 50%;
+}
+ 
+.nav-links ul li ul {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 8px);
+    transform: translate(-50%, 10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 1000;
+    text-align: center;
+    padding: 5px 0;
+    min-width: 160px;
+}
+ 
+.nav-links ul li:hover ul {
+    opacity: 1;
+    transform: translate(-50%, 0);
+    pointer-events: auto;
+    display: block;
+}
+ 
+.nav-links ul li ul li {
+    display: block;
+    margin: 0;
+}
+ 
+.nav-links ul li ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+ 
+.nav-links ul li ul li a:hover {
+    color: #ADD8E6;
+}
+ 
+.nav-links ul li ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: background 0.3s;
+}
+ 
+.nav-links ul li ul li a:hover {
+    color: #ADD8E6;
+}
+ 
+.nav-links ul li:hover ul {
+    display: block;
+}
+ 
+.nav-links.active {
+    right: 0;
+    opacity: 1;
+}
+ 
+ 
+.nav-links ul li ul li .sub-menu {
+    position: absolute;
+    top: 0;
+    left: 80%;
+    transform: translateX(10px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    border-radius: 5px;
+    min-width: 160px;
+    padding: 5px 0;
+    z-index: 1000;
+}
+ 
+.nav-links ul li ul li:hover>.sub-menu {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+ 
+.nav-links ul li ul li .sub-menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+ 
+.nav-links ul li ul li .sub-menu li a:hover {
+    color: #ADD8E6;
+}
+ 
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.2s ease;
+    padding: 30px 80px;
+}
+ 
+.header.scrolled #navbar {
+    background: rgba(0, 0, 0, 0.6);
+}
+ 
+body:hover #navbar {
+    top: 0;
+}
+ 
+.wide-bar {
+    width: 100%;
+    background-color: pink;
+    padding: 10px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+ 
+.wide-bar span {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+ 
+.wide-bar.arrow {
+    margin-left: 8px;
+    font-size: 18px;
+}
+ 
+.wide-bar a {
+    text-decoration: none !important;
+    border-bottom: none !important;
+}
+ 
+.wide-bar a::after {
+    display: none !important;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+}
+.contents{
+    text-align: left;
+    padding-left: 350px;
+}
+.logo-and-page-name{
+    padding-top: 100px;
+}
+.footer{
+    padding-left: 250px;
+    color: rgb(9, 9, 103);
+}
+.contenth4{
+    color: rgb(9, 9, 103);
+}
+.about-us{
+    text-align: center;
+    padding-top: 150px;
+    padding: 100px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 100px 0;
+}
+.about-us h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+ 
+.about-us p {
+    font: 36px;
+    font-weight: normal;
+}
+.footer-main{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-top: 120px;
+}
